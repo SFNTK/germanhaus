@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRouter } from 'next/navigation'
 const Consultation = () => {
   const router = useRouter()
+  const consulpara="Prenez rendez-vous gratuitement avec notre équipe pour discuter de vos besoins et commencer votre cours d'allemand."
     gsap.registerPlugin(ScrollTrigger);
     useEffect(()=>{   
         const tls3 = gsap.timeline({
@@ -33,7 +34,7 @@ const Consultation = () => {
             <div className=" text-center" id="consultationpara">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-3">Prêt à commencer ?</h2>
               <p className="text-xl mb-6">
-                Prenez rendez-vous gratuitement avec notre équipe pour discuter de vos besoins et commencer votre cours d'allemand.
+                {consulpara}
               </p>
               <button  onClick={()=>{
                         router.push('/#contact')
