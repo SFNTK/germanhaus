@@ -5,6 +5,8 @@ import React, { useEffect, useRef } from 'react';
 import SplitType from 'split-type';
 import gsap from 'gsap';
 const Hero = () => {
+    const h1hero="Apprenez l'allemand chez Germanhaus et brisez les barrières linguistiques !"
+    const phero="Prenez votre rendez-vous gratuit pour en savoir plus sur nos cours d'allemand."
     useEffect(()=>{
         const text = SplitType.create('#heroh1');
         const tls2 = gsap.timeline({
@@ -33,10 +35,10 @@ const Hero = () => {
    
         <div className="relative z-10 container px-4 h-full flex flex-col justify-center items-center text-center">
           <h1 id="heroh1" className="text-4xl md:text-6xl font-bold mb-4">
-            Apprenez l'allemand chez Germanhaus et brisez les barrières linguistiques !
+              {h1hero}
           </h1>
           <p className="text-xl md:text-2xl mb-8">
-            Prenez votre rendez-vous gratuit pour en savoir plus sur nos cours d'allemand.
+              {phero}
           </p>
           <button onClick={()=>{
             var message = "Bonjour , je suis interéssé"; // Custom message
