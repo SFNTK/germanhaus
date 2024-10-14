@@ -2,6 +2,7 @@ import React,{ useState } from 'react';
 
 
 const Contact = () => {
+    const headinecotct="Contactez-nous pour plus d'informations";
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -22,7 +23,7 @@ const Contact = () => {
     return (
         <section className="py-16" id='contact'>
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Contactez-nous pour plus d'informations</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">{headinecotct}</h2>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-1/2">
               <img
@@ -77,8 +78,8 @@ const Contact = () => {
                 </button>
               </form>
               <p className="contactnumber mt-6 text-center text-lg">
-                Ou appelez-nous directement au : <a href="tel:0751-761346" className="text-red-600 font-semibold">0751-761346</a>
-                <br/>Ou Sur Whatssap: <a href="https://wa.me/1234567890?text=Hello!%20I%27m%20interested%20in%20your%20services" className="text-red-600 font-semibold">0751-761346</a>
+                Ou appelez-nous directement au : <a href="tel:0751-761346" className="text-red-600 font-semibold">0751761346</a>
+                <br/>Ou Sur Whatssap: <a href="https://wa.me/1234567890?text=Hello!%20I%27m%20interested%20in%20your%20services" className="text-red-600 font-semibold">0751761346</a>
               </p>
             </div>
           </div>
