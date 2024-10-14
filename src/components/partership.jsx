@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRouter } from 'next/navigation'
 const Partership = () => {
+  const perterpara="  Nous avons des collaborations avec des hôpitaux allemands pour offrir des opportunités uniques à nos étudiants. Vous bénéficierez d'un accompagnement personnalisé pour vos démarches administratives et professionnelles."
   const router = useRouter()
     gsap.registerPlugin(ScrollTrigger);
     useEffect(()=>{   
@@ -30,7 +31,7 @@ const Partership = () => {
           
             <div id="partertxt">
               <p id="partership" className="text-lg mb-6">
-                Nous avons des collaborations avec des hôpitaux allemands pour offrir des opportunités uniques à nos étudiants. Vous bénéficierez d'un accompagnement personnalisé pour vos démarches administratives et professionnelles.
+                {perterpara}
               </p>
               <button  onClick={()=>{
                         router.push('/#contact')
